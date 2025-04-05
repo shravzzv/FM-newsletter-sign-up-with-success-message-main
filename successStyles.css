@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary-red: hsl(4, 100%, 67%);
+  --color-neutral-blue-800: hsl(234, 29%, 20%);
+  --color-neutral-blue-700: hsl(235, 18%, 26%);
+  --color-neutral-grey: hsl(0, 0%, 58%);
+  --color-neutral-white: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url(./assets/fonts/Roboto-Bold.ttf);
+  font-weight: 700;
+}
+
+.success-message {
+  font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: var(--color-neutral-white);
+  padding: 20px;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.success-message__icon {
+  margin-top: 40px;
+  width: 48px;
+}
+
+.success-message__title {
+  color: var(--color-neutral-blue-700);
+  font-family: 'Roboto-Bold';
+}
+
+.success-message__description {
+  flex: 1;
+}
+
+.success-message__button {
+  font: 'Roboto-Bold';
+  color: var(--color-neutral-white);
+  background-color: var(--color-neutral-blue-800);
+  padding: 20px 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  html {
+    background-color: var(--color-neutral-blue-800);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .success-message {
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: max-content;
+    max-width: 400px;
+    padding: 25px 40px;
+  }
+
+  .success-message__icon {
+    margin: 0;
+  }
+
+  .success-message__description {
+    margin-top: 0;
+  }
+
+  .success-message__button:hover {
+    background-color: var(--color-primary-red);
+  }
+}

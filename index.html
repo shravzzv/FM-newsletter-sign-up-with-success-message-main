@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <link rel="stylesheet" href="homeStyles.css" />
+
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="newsletter">
+    <picture>
+      <source
+        class="newsletter__image"
+        srcset="./assets/images/illustration-sign-up-desktop.svg"
+        media="(min-width: 768px)"
+      />
+      <img
+        class="newsletter__image"
+        src="./assets/images/illustration-sign-up-mobile.svg"
+        alt="An illustration containing generic images"
+      />
+    </picture>
+
+    <div class="newsletter__content">
+      <h1 class="newsletter__title">Stay updated!</h1>
+      <p class="newsletter__description">
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+
+      <ul class="newsletter__list">
+        <li class="newsletter__list-item">
+          <img
+            class="newsletter__icon"
+            src="./assets/images/icon-list.svg"
+            alt="An orange checkmark"
+          />
+          <span class="newsletter__text"
+            >Product discovery and building what matters are</span
+          >
+        </li>
+        <li class="newsletter__list-item">
+          <img
+            class="newsletter__icon"
+            src="./assets/images/icon-list.svg"
+            alt="An orange checkmark"
+          />
+          <span class="newsletter__text"
+            >Measuring to ensure updates are a success</span
+          >
+        </li>
+        <li class="newsletter__list-item">
+          <img
+            class="newsletter__icon"
+            src="./assets/images/icon-list.svg"
+            alt="An orange checkmark"
+          />
+          <span class="newsletter__text">And much more!</span>
+        </li>
+      </ul>
+
+      <form class="newsletter__form">
+        <div class="newsletter__form-control">
+          <label class="newsletter__label" for="email">Email address</label>
+          <input
+            class="newsletter__input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@company.com"
+          />
+          <span class="newsletter__error">Valid email required</span>
+        </div>
+
+        <button class="newsletter__button" type="submit">
+          Subscribe to monthly newsletter
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
